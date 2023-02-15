@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+#logo-section {
+  background-image: url("halie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 400px;
+}
+#logo-section {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+}
+
+img {
+  width: 60px;
+  height: 80px;
+}
+
+.logo {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  margin-top: 150px;
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+  padding: 15px;
+}
+
+/* form style */
