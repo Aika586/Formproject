@@ -8,59 +8,78 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <main>
-      <section id="logo-section">
-        <div class="logo">
-          <img src="odin-logo.png" alt="odin-logo" />
-          ODIN
-        </div>
-      </section>
-    </main>
-    <main>
-      <section class="form-text">
+    <div id="logo-sidebar">
+      <div class="logo">
+        <img src="odin-logo.png" alt="odin-logo" />
+        ODIN
+      </div>
+    </div>
+    <div id="form-side">
+      <div class="form-text">
         <p>
-          This is not real online service!You know you need something likw this
-          in yourlife to help you realize your deepest dreams.<br />Sign up to
-          get started
+          This is not real online service!You know you need something
+          <br />like this in yourlife to help you realize your deepest
+          dreams.<br />Sign up to get started
         </p>
         <p>You know you want to.</p>
-      </section>
+      </div>
       <form action="#">
         <fieldset>
           <legend>Let's do this!</legend>
-          <div class="form-row">
-            <label for="first-name">FIRST NAME </label>
-            <input type="text" id="first-name" name="first-name" value="Thor" />
-          </div>
-          <div class="form-row">
-            <label for="last-name">LAST NAME </label>
-            <input type="text" id="last-name" name="last-name" />
-          </div>
-          <div class="form-row">
-            <label for="email">EMAIL </label>
-            <input type="email" id="email" name="email" />
-          </div>
-          <div class="form-row">
-            <label for="tel">PHONE NUMBER </label>
-            <input type="tel" id="tel" name="tel" />
-          </div>
-          <div class="form-row">
-            <label for="password">PASSWORD </label>
-            <input type="password" id="password" name="password" />
-          </div>
+          <div class="form-column">
+            <div class="form-row">
+              <label for="first-name">FIRST NAME </label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                value="Thor"
+              />
+            </div>
 
-          <div class="form-row">
-            <label for="confirm-password">CONFIRM PASSWORD </label>
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-            />
+            <div class="form-row">
+              <label for="last-name">LAST NAME </label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+          </div>
+          <div class="form-column">
+            <div class="form-row">
+              <label for="email">EMAIL </label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-row">
+              <label for="tel">PHONE NUMBER </label>
+              <input type="tel" id="tel" name="tel" />
+            </div>
+          </div>
+          <div class="form-column">
+            <div class="form-row">
+              <label for="password">PASSWORD </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="error"
+              /><span class="error-message">*Password do not match</span>
+            </div>
+
+            <div class="form-row">
+              <label for="confirm-password">CONFIRM PASSWORD </label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                class="error"
+              />
+            </div>
           </div>
         </fieldset>
-        <button type="submit">Create Account</button>
+
+        <div class="button">
+          <p>Already have an account? <a href="#">Log in</a></p>
+          <button type="submit">Create Account</button>
+        </div>
       </form>
-      <p>Already have an account? <a href="#">Log in</a></p>
-    </main>
+    </div>
   </body>
 </html>

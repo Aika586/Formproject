@@ -3,22 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
-#logo-section {
-  background-image: url("halie.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 400px;
-}
-#logo-section {
-  display: flex;
-  flex-direction: column;
-}
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 body {
   display: flex;
+  height: 100vh;
+}
+
+#logo-sidebar {
+  background-image: url("halie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#logo-sidebar {
+  flex: 1 1 0;
+}
+
+#form-side {
+  flex: 3 1 0;
+}
+
+#logo-section {
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -41,4 +49,74 @@ img {
   padding: 15px;
 }
 
+.form-text {
+  background-color: whitesmoke;
+  font-size: 1.3rem;
+  font-weight: 600;
+  height: 250px;
+}
+
+.form-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-text:first-child {
+  padding: 100px 30px;
+}
+
 /* form style */
+
+form {
+  margin-left: 20px;
+}
+fieldset {
+  border: none;
+  padding: 16px;
+  margin: 10px 0;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-column {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.form-row input {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 3px;
+}
+
+.form-row label {
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+button[type="submit"] {
+  background-color: #596d48;
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
